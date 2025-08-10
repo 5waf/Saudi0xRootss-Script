@@ -379,7 +379,7 @@ local function TSZDAAU_fake_script() -- Decal.LocalScript
 	btn.MouseButton1Click:Connect(function()
 		for _, obj in pairs(workspace:GetDescendants()) do
 			if obj:IsA("BasePart") and not obj:IsDescendantOf(game.Players) then
-				local decalId = "rbxassetid://75786512108060"
+				local decalId = "rbxassetid://2972135334"
 				local faces = {"Front", "Back", "Left", "Right", "Top", "Bottom"}
 				for _, face in pairs(faces) do
 					local d = Instance.new("Decal", obj)
@@ -397,7 +397,7 @@ local function DDYWC_fake_script() -- Particles.LocalScript
 	local btn = script.Parent
 	local Players = game:GetService("Players")
 	local RunService = game:GetService("RunService")
-	local decalTexture = "rbxassetid://75786512108060"
+	local decalTexture = "rbxassetid://2972135334"
 	
 	local particles = {}
 	
@@ -458,12 +458,12 @@ local function ZCGATM_fake_script() -- Skybox.LocalScript
 		end
 	
 		local s = Instance.new("Sky", game.Lighting)
-		s.SkyboxBk = "rbxassetid://75786512108060"
-		s.SkyboxDn = "rbxassetid://75786512108060"
-		s.SkyboxFt = "rbxassetid://75786512108060"
-		s.SkyboxLf = "rbxassetid://175786512108060"
-		s.SkyboxRt = "rbxassetid://75786512108060"
-		s.SkyboxUp = "rbxassetid://75786512108060"
+		s.SkyboxBk = "rbxassetid://2972135334"
+		s.SkyboxDn = "rbxassetid://2972135334"
+		s.SkyboxFt = "rbxassetid://2972135334"
+		s.SkyboxLf = "rbxassetid://2972135334"
+		s.SkyboxRt = "rbxassetid://2972135334"
+		s.SkyboxUp = "rbxassetid://2972135334"
 	
 		game.Lighting.TimeOfDay = "12:00:00"
 	end)
@@ -484,11 +484,11 @@ local function ONHIKZ_fake_script() -- Jumpscare.LocalScript
 		img.Size = UDim2.new(1, 0, 1, 0)
 		img.Position = UDim2.new(0, 0, 0, 0)
 		img.BackgroundTransparency = 1
-		img.Image = "rbxassetid://75786512108060"
+		img.Image = "rbxassetid://2972135334"
 		img.ZIndex = 10
 	
 		local sound = Instance.new("Sound", screenGui)
-		sound.SoundId = "rbxassetid://7236490488"
+		sound.SoundId = "rbxassetid://2972135334"
 		sound.Volume = 10
 		sound:Play()
 	
