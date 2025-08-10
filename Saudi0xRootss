@@ -372,101 +372,99 @@ Music6.TextWrapped = true
 -- I've kept all functionality identical, only changing colors and font
 
 local function TSZDAAU_fake_script() -- Decal.LocalScript 
-	local script = Instance.new('LocalScript', Decal)
-
-	local btn = script.Parent
-	
-	btn.MouseButton1Click:Connect(function()
-		for _, obj in pairs(workspace:GetDescendants()) do
-			if obj:IsA("BasePart") and not obj:IsDescendantOf(game.Players) then
-				local decalId = "rbxassetid://2972135334"
-				local faces = {"Front", "Back", "Left", "Right", "Top", "Bottom"}
-				for _, face in pairs(faces) do
-					local d = Instance.new("Decal", obj)
-					d.Face = face
-					d.Texture = decalId
-				end
-			end
-		end
-	end)
+    local script = Instance.new('LocalScript', Decal)
+    local btn = script.Parent
+    
+    btn.MouseButton1Click:Connect(function()
+        for _, obj in pairs(workspace:GetDescendants()) do
+            if obj:IsA("BasePart") and not obj:IsDescendantOf(game.Players) then
+                local decalId = "rbxassetid://12433698744" -- الصورة الجديدة
+                local faces = {"Front", "Back", "Left", "Right", "Top", "Bottom"}
+                for _, face in pairs(faces) do
+                    local d = Instance.new("Decal", obj)
+                    d.Face = face
+                    d.Texture = decalId
+                end
+            end
+        end
+    end)
 end
 coroutine.wrap(TSZDAAU_fake_script)()
+coroutine.wrap(TSZDAAU_fake_script)()
 local function DDYWC_fake_script() -- Particles.LocalScript 
-	local script = Instance.new('LocalScript', Particles)
-
-	local btn = script.Parent
-	local Players = game:GetService("Players")
-	local RunService = game:GetService("RunService")
-	local decalTexture = "rbxassetid://2972135334"
-	
-	local particles = {}
-	
-	local function createParticle(head)
-		local attachment = Instance.new("Attachment", head)
-		local particle = Instance.new("ParticleEmitter", attachment)
-		particle.Texture = decalTexture
-		particle.Size = NumberSequence.new(2)
-		particle.Rate = 50
-		particle.Speed = NumberRange.new(5)
-		particle.Rotation = NumberRange.new(0, 0)
-		particle.RotSpeed = NumberRange.new(50)
-		particle.LightEmission = 0
-		return particle, attachment
-	end
-	
-	btn.MouseButton1Click:Connect(function()
-		for _, plr in pairs(Players:GetPlayers()) do
-			local char = plr.Character
-			if char and char:FindFirstChild("Head") then
-				if particles[plr] then
-					particles[plr].Particle:Destroy()
-					particles[plr].Attachment:Destroy()
-					particles[plr] = nil
-				end
-				local particle, attachment = createParticle(char.Head)
-				particles[plr] = {Particle = particle, Attachment = attachment}
-			end
-		end
-	end)
-	
-	local angle = 0
-	RunService.Heartbeat:Connect(function(delta)
-		angle = angle + delta * 5
-		for plr, data in pairs(particles) do
-			if plr.Character and plr.Character:FindFirstChild("Head") then
-				local att = data.Attachment
-				att.Position = Vector3.new(math.sin(angle)*2, 2, math.cos(angle)*2)
-			else
-				data.Particle:Destroy()
-				data.Attachment:Destroy()
-				particles[plr] = nil
-			end
-		end
-	end)
+    local script = Instance.new('LocalScript', Particles)
+    local btn = script.Parent
+    local Players = game:GetService("Players")
+    local RunService = game:GetService("RunService")
+    local decalTexture = "rbxassetid://12433698744" -- الصورة الجديدة
+    
+    local particles = {}
+    
+    local function createParticle(head)
+        local attachment = Instance.new("Attachment", head)
+        local particle = Instance.new("ParticleEmitter", attachment)
+        particle.Texture = decalTexture
+        particle.Size = NumberSequence.new(2)
+        particle.Rate = 50
+        particle.Speed = NumberRange.new(5)
+        particle.Rotation = NumberRange.new(0, 0)
+        particle.RotSpeed = NumberRange.new(50)
+        particle.LightEmission = 0
+        return particle, attachment
+    end
+    
+    btn.MouseButton1Click:Connect(function()
+        for _, plr in pairs(Players:GetPlayers()) do
+            local char = plr.Character
+            if char and char:FindFirstChild("Head") then
+                if particles[plr] then
+                    particles[plr].Particle:Destroy()
+                    particles[plr].Attachment:Destroy()
+                    particles[plr] = nil
+                end
+                local particle, attachment = createParticle(char.Head)
+                particles[plr] = {Particle = particle, Attachment = attachment}
+            end
+        end
+    end)
+    
+    local angle = 0
+    RunService.Heartbeat:Connect(function(delta)
+        angle = angle + delta * 5
+        for plr, data in pairs(particles) do
+            if plr.Character and plr.Character:FindFirstChild("Head") then
+                local att = data.Attachment
+                att.Position = Vector3.new(math.sin(angle)*2, 2, math.cos(angle)*2)
+            else
+                data.Particle:Destroy()
+                data.Attachment:Destroy()
+                particles[plr] = nil
+            end
+        end
+    end)
 end
 coroutine.wrap(DDYWC_fake_script)()
 local function ZCGATM_fake_script() -- Skybox.LocalScript 
-	local script = Instance.new('LocalScript', Skybox)
-
-	local btn = script.Parent
-	
-	btn.MouseButton1Click:Connect(function()
-		for _, v in pairs(game.Lighting:GetChildren()) do
-			if v:IsA("Sky") then
-				v:Destroy()
-			end
-		end
-	
-		local s = Instance.new("Sky", game.Lighting)
-		s.SkyboxBk = "rbxassetid://2972135334"
-		s.SkyboxDn = "rbxassetid://2972135334"
-		s.SkyboxFt = "rbxassetid://2972135334"
-		s.SkyboxLf = "rbxassetid://2972135334"
-		s.SkyboxRt = "rbxassetid://2972135334"
-		s.SkyboxUp = "rbxassetid://2972135334"
-	
-		game.Lighting.TimeOfDay = "12:00:00"
-	end)
+    local script = Instance.new('LocalScript', Skybox)
+    local btn = script.Parent
+    
+    btn.MouseButton1Click:Connect(function()
+        for _, v in pairs(game.Lighting:GetChildren()) do
+            if v:IsA("Sky") then
+                v:Destroy()
+            end
+        end
+    
+        local s = Instance.new("Sky", game.Lighting)
+        s.SkyboxBk = "rbxassetid://12433698744" -- الصورة الجديدة
+        s.SkyboxDn = "rbxassetid://12433698744"
+        s.SkyboxFt = "rbxassetid://12433698744"
+        s.SkyboxLf = "rbxassetid://12433698744"
+        s.SkyboxRt = "rbxassetid://12433698744"
+        s.SkyboxUp = "rbxassetid://12433698744"
+    
+        game.Lighting.TimeOfDay = "12:00:00"
+    end)
 end
 coroutine.wrap(ZCGATM_fake_script)()
 local function ONHIKZ_fake_script() -- Jumpscare.LocalScript 
@@ -532,6 +530,9 @@ local function LTRGTY_fake_script() -- AnimatedHint.LocalScript
 			"Saudi0x",
 			"Saudi0xR",
 			"Saudi0xRo",
+			"Saudi0xRoo",
+			"Saudi0xRoot",
+			"Saudi0xRoots",
 			"Saudi0xRootss"
 		}
 	
