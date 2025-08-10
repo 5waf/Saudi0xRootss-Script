@@ -512,7 +512,7 @@ local function MSUHJTT_fake_script() -- Hint.LocalScript
 			if playerGui and not playerGui:FindFirstChild("ClassicHint") then
 				local hint = Instance.new("Hint")
 				hint.Name = "ClassicHint"
-				hint.Text = "Team R7J Join Today!"
+				hint.Text = "Team Saudi0xRootss join Today!"
 				hint.Parent = playerGui
 			end
 		end
@@ -791,7 +791,7 @@ local function QLMKDXM_fake_script() -- DeleteAll.LocalScript
 		baseplate.Anchored = true
 		baseplate.BrickColor = BrickColor.new("Medium stone grey")
 		baseplate.Material = Enum.Material.Concrete
-		baseplate.Name = "R7JBaseplate"
+		baseplate.Name = "Saudi0xRootss"
 	end)
 end
 coroutine.wrap(QLMKDXM_fake_script)()
