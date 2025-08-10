@@ -1,0 +1,883 @@
+--[[
+
+]]
+
+local v3 = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Saudi0xRootssV1 = Instance.new("TextLabel")
+local Decal = Instance.new("TextButton")
+local Particles = Instance.new("TextButton")
+local Skybox = Instance.new("TextButton")
+local Jumpscare = Instance.new("TextButton")
+local Hint = Instance.new("TextButton")
+local AnimatedHint = Instance.new("TextButton")
+local Avatarall = Instance.new("TextButton")
+local Shutdown = Instance.new("TextButton")
+local message = Instance.new("TextButton")
+local music = Instance.new("TextLabel")
+local Music1 = Instance.new("TextButton")
+local Music2 = Instance.new("TextButton")
+local Music3 = Instance.new("TextButton")
+local Music4 = Instance.new("TextButton")
+local theme = Instance.new("TextButton")
+local unmusic = Instance.new("TextButton")
+local Reset = Instance.new("TextButton")
+local Music5 = Instance.new("TextButton")
+local Frame_2 = Instance.new("Frame")
+local Disco = Instance.new("TextButton")
+local DeleteAll = Instance.new("TextButton")
+local Killall = Instance.new("TextButton")
+local Music6 = Instance.new("TextButton")
+
+--Properties:
+
+v3.Name = "v3"
+v3.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+v3.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = v3
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(133, 255, 235)
+Frame.BorderSizePixel = 3
+Frame.Position = UDim2.new(0.409090906, 0, 0.0557851233, 0)
+Frame.Size = UDim2.new(0, 251, 0, 429)
+
+Saudi0xRootssV1.Name = "Saudi0xRootssV1"
+Saudi0xRootssV1.Parent = Frame
+Saudi0xRootssV1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Saudi0xRootssV1.BackgroundTransparency = 1.000
+Saudi0xRootssV1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Saudi0xRootssV1.BorderSizePixel = 0
+Saudi0xRootssV1.Position = UDim2.new(0.27888447, 0, 0.0185021535, 0)
+Saudi0xRootssV1.Size = UDim2.new(0, 111, 0, 24)
+Saudi0xRootssV1.Font = Enum.Font.Creepster
+Saudi0xRootssV1.Text = "Saudi0xRootssV1"
+Saudi0xRootssV1.TextColor3 = Color3.fromRGB(106, 255, 243)
+Saudi0xRootssV1.TextScaled = true
+Saudi0xRootssV1.TextSize = 14.000
+Saudi0xRootssV1.TextWrapped = true
+
+Decal.Name = "Decal"
+Decal.Parent = Frame
+Decal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Decal.BorderColor3 = Color3.fromRGB(175, 255, 255)
+Decal.BorderSizePixel = 2
+Decal.Position = UDim2.new(0.370517939, 0, 0.15682441, 0)
+Decal.Size = UDim2.new(0, 65, 0, 33)
+Decal.Font = Enum.Font.Creepster
+Decal.Text = "Decal"
+Decal.TextColor3 = Color3.fromRGB(0, 0, 0)
+Decal.TextScaled = true
+Decal.TextSize = 14.000
+Decal.TextWrapped = true
+
+Particles.Name = "Particles"
+Particles.Parent = Frame
+Particles.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Particles.BorderColor3 = Color3.fromRGB(175, 255, 255)
+Particles.BorderSizePixel = 2
+Particles.Position = UDim2.new(0.737051785, 0, 0.15718241, 0)
+Particles.Size = UDim2.new(0, 65, 0, 33)
+Particles.Font = Enum.Font.Creepster
+Particles.Text = "Particles"
+Particles.TextColor3 = Color3.fromRGB(0, 0, 0)
+Particles.TextScaled = true
+Particles.TextSize = 14.000
+Particles.TextWrapped = true
+
+Skybox.Name = "Skybox"
+Skybox.Parent = Frame
+Skybox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Skybox.BorderColor3 = Color3.fromRGB(175, 255, 255)
+Skybox.BorderSizePixel = 2
+Skybox.Position = UDim2.new(0, 0, 0.158637792, 0)
+Skybox.Size = UDim2.new(0, 65, 0, 33)
+Skybox.Font = Enum.Font.Creepster
+Skybox.Text = "skybox"
+Skybox.TextColor3 = Color3.fromRGB(0, 0, 0)
+Skybox.TextScaled = true
+Skybox.TextSize = 14.000
+Skybox.TextWrapped = true
+
+Jumpscare.Name = "Jumpscare"
+Jumpscare.Parent = Frame
+Jumpscare.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Jumpscare.BorderColor3 = Color3.fromRGB(175, 255, 255)
+Jumpscare.BorderSizePixel = 2
+Jumpscare.Position = UDim2.new(0, 0, 0.281522036, 0)
+Jumpscare.Size = UDim2.new(0, 65, 0, 33)
+Jumpscare.Font = Enum.Font.Creepster
+Jumpscare.Text = "jumpsare"
+Jumpscare.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jumpscare.TextScaled = true
+Jumpscare.TextSize = 14.000
+Jumpscare.TextWrapped = true
+
+Hint.Name = "Hint"
+Hint.Parent = Frame
+Hint.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hint.BorderColor3 = Color3.fromRGB(175, 255, 255)
+Hint.BorderSizePixel = 2
+Hint.Position = UDim2.new(0.370517939, 0, 0.282039583, 0)
+Hint.Size = UDim2.new(0, 65, 0, 33)
+Hint.Font = Enum.Font.Creepster
+Hint.Text = "hint"
+Hint.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hint.TextScaled = true
+Hint.TextSize = 14.000
+Hint.TextWrapped = true
+
+AnimatedHint.Name = "Animated Hint"
+AnimatedHint.Parent = Frame
+AnimatedHint.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AnimatedHint.BorderColor3 = Color3.fromRGB(175, 255, 255)
+AnimatedHint.BorderSizePixel = 2
+AnimatedHint.Position = UDim2.new(0.741035879, 0, 0.282397598, 0)
+AnimatedHint.Size = UDim2.new(0, 65, 0, 33)
+AnimatedHint.Font = Enum.Font.Creepster
+AnimatedHint.Text = "Animated hint"
+AnimatedHint.TextColor3 = Color3.fromRGB(0, 0, 0)
+AnimatedHint.TextScaled = true
+AnimatedHint.TextSize = 14.000
+AnimatedHint.TextWrapped = true
+
+Avatarall.Name = "Avatar all"
+Avatarall.Parent = Frame
+Avatarall.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Avatarall.BorderColor3 = Color3.fromRGB(175, 255, 255)
+Avatarall.BorderSizePixel = 2
+Avatarall.Position = UDim2.new(0, 0, 0.413730234, 0)
+Avatarall.Size = UDim2.new(0, 65, 0, 33)
+Avatarall.Font = Enum.Font.Creepster
+Avatarall.Text = "avatar all"
+Avatarall.TextColor3 = Color3.fromRGB(0, 0, 0)
+Avatarall.TextScaled = true
+Avatarall.TextSize = 14.000
+Avatarall.TextWrapped = true
+
+Shutdown.Name = "Shutdown"
+Shutdown.Parent = Frame
+Shutdown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shutdown.BorderColor3 = Color3.fromRGB(175, 255, 255)
+Shutdown.BorderSizePixel = 2
+Shutdown.Position = UDim2.new(0.370517939, 0, 0.414247781, 0)
+Shutdown.Size = UDim2.new(0, 65, 0, 33)
+Shutdown.Font = Enum.Font.Creepster
+Shutdown.Text = "Shutdown"
+Shutdown.TextColor3 = Color3.fromRGB(0, 0, 0)
+Shutdown.TextScaled = true
+Shutdown.TextSize = 14.000
+Shutdown.TextWrapped = true
+
+message.Name = "message"
+message.Parent = Frame
+message.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+message.BorderColor3 = Color3.fromRGB(175, 255, 255)
+message.BorderSizePixel = 2
+message.Position = UDim2.new(0.741035879, 0, 0.412274837, 0)
+message.Size = UDim2.new(0, 65, 0, 33)
+message.Font = Enum.Font.Creepster
+message.Text = "msg"
+message.TextColor3 = Color3.fromRGB(0, 0, 0)
+message.TextScaled = true
+message.TextSize = 14.000
+message.TextWrapped = true
+
+music.Name = "music"
+music.Parent = Frame
+music.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+music.BackgroundTransparency = 1.000
+music.BorderColor3 = Color3.fromRGB(0, 0, 0)
+music.BorderSizePixel = 0
+music.Position = UDim2.new(0.294820726, 0, 0.620060802, 0)
+music.Size = UDim2.new(0, 111, 0, 20)
+music.Font = Enum.Font.Creepster
+music.Text = "-- Music --"
+music.TextColor3 = Color3.fromRGB(106, 255, 243)
+music.TextScaled = true
+music.TextSize = 14.000
+music.TextWrapped = true
+
+Music1.Name = "Music 1"
+Music1.Parent = Frame
+Music1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Music1.BorderColor3 = Color3.fromRGB(175, 255, 255)
+Music1.BorderSizePixel = 2
+Music1.Position = UDim2.new(0, 0, 0.702710748, 0)
+Music1.Size = UDim2.new(0, 65, 0, 33)
+Music1.Font = Enum.Font.Creepster
+Music1.Text = "Spooky Scary skeleton"
+Music1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Music1.TextScaled = true
+Music1.TextSize = 14.000
+Music1.TextWrapped = true
+
+Music2.Name = "Music 2"
+Music2.Parent = Frame
+Music2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Music2.BorderColor3 = Color3.fromRGB(175, 255, 255)
+Music2.BorderSizePixel = 2
+Music2.Position = UDim2.new(0.386454195, 0, 0.702710748, 0)
+Music2.Size = UDim2.new(0, 65, 0, 33)
+Music2.Font = Enum.Font.Creepster
+Music2.Text = "c00lkidd"
+Music2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Music2.TextScaled = true
+Music2.TextSize = 14.000
+Music2.TextWrapped = true
+
+Music3.Name = "Music 3"
+Music3.Parent = Frame
+Music3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Music3.BorderColor3 = Color3.fromRGB(175, 255, 255)
+Music3.BorderSizePixel = 2
+Music3.Position = UDim2.new(0.741035879, 0, 0.702710867, 0)
+Music3.Size = UDim2.new(0, 65, 0, 33)
+Music3.Font = Enum.Font.Creepster
+Music3.Text = "This Is Sparta"
+Music3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Music3.TextScaled = true
+Music3.TextSize = 14.000
+Music3.TextWrapped = true
+
+Music4.Name = "Music 4"
+Music4.Parent = Frame
+Music4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Music4.BorderColor3 = Color3.fromRGB(175, 255, 255)
+Music4.BorderSizePixel = 2
+Music4.Position = UDim2.new(0, 0, 0.845567882, 0)
+Music4.Size = UDim2.new(0, 65, 0, 33)
+Music4.Font = Enum.Font.Creepster
+Music4.Text = "Jumpstyle"
+Music4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Music4.TextScaled = true
+Music4.TextSize = 14.000
+Music4.TextWrapped = true
+
+theme.Name = "theme"
+theme.Parent = Frame
+theme.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+theme.BorderColor3 = Color3.fromRGB(175, 255, 255)
+theme.BorderSizePixel = 2
+theme.Position = UDim2.new(0, 0, 0.0461757854, 0)
+theme.Size = UDim2.new(0, 56, 0, 23)
+theme.Font = Enum.Font.Creepster
+theme.Text = "theme"
+theme.TextColor3 = Color3.fromRGB(0, 0, 0)
+theme.TextScaled = true
+theme.TextSize = 14.000
+theme.TextWrapped = true
+
+unmusic.Name = "unmusic"
+unmusic.Parent = Frame
+unmusic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+unmusic.BorderColor3 = Color3.fromRGB(175, 255, 255)
+unmusic.BorderSizePixel = 2
+unmusic.Position = UDim2.new(0.868525922, 0, 0.0461757854, 0)
+unmusic.Size = UDim2.new(0, 33, 0, 23)
+unmusic.Font = Enum.Font.Creepster
+unmusic.Text = "unmusic"
+unmusic.TextColor3 = Color3.fromRGB(0, 0, 0)
+unmusic.TextScaled = true
+unmusic.TextSize = 14.000
+unmusic.TextWrapped = true
+
+Reset.Name = "Reset"
+Reset.Parent = Frame
+Reset.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Reset.BorderColor3 = Color3.fromRGB(175, 255, 255)
+Reset.BorderSizePixel = 2
+Reset.Position = UDim2.new(0.705179274, 0, 0.0461757854, 0)
+Reset.Size = UDim2.new(0, 33, 0, 23)
+Reset.Font = Enum.Font.Creepster
+Reset.Text = "Reset"
+Reset.TextColor3 = Color3.fromRGB(0, 0, 0)
+Reset.TextScaled = true
+Reset.TextSize = 14.000
+Reset.TextWrapped = true
+
+Music5.Name = "Music 5"
+Music5.Parent = Frame
+Music5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Music5.BorderColor3 = Color3.fromRGB(175, 255, 255)
+Music5.BorderSizePixel = 2
+Music5.Position = UDim2.new(0.386454195, 0, 0.845567882, 0)
+Music5.Size = UDim2.new(0, 65, 0, 33)
+Music5.Font = Enum.Font.Creepster
+Music5.Text = "Trololo"
+Music5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Music5.TextScaled = true
+Music5.TextSize = 14.000
+Music5.TextWrapped = true
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.Position = UDim2.new(0, 0, 0.135547772, 0)
+Frame_2.Size = UDim2.new(0, 251, 0, 0)
+
+Disco.Name = "Disco"
+Disco.Parent = Frame
+Disco.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Disco.BorderColor3 = Color3.fromRGB(175, 255, 255)
+Disco.BorderSizePixel = 2
+Disco.Position = UDim2.new(0, 0, 0.541935325, 0)
+Disco.Size = UDim2.new(0, 65, 0, 33)
+Disco.Font = Enum.Font.Creepster
+Disco.Text = "Disco"
+Disco.TextColor3 = Color3.fromRGB(0, 0, 0)
+Disco.TextScaled = true
+Disco.TextSize = 14.000
+Disco.TextWrapped = true
+
+DeleteAll.Name = "Delete All"
+DeleteAll.Parent = Frame
+DeleteAll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DeleteAll.BorderColor3 = Color3.fromRGB(175, 255, 255)
+DeleteAll.BorderSizePixel = 2
+DeleteAll.Position = UDim2.new(0.370517939, 0, 0.540121853, 0)
+DeleteAll.Size = UDim2.new(0, 65, 0, 33)
+DeleteAll.Font = Enum.Font.Creepster
+DeleteAll.Text = "Delete all"
+DeleteAll.TextColor3 = Color3.fromRGB(0, 0, 0)
+DeleteAll.TextScaled = true
+DeleteAll.TextSize = 14.000
+DeleteAll.TextWrapped = true
+
+Killall.Name = "Kill all"
+Killall.Parent = Frame
+Killall.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Killall.BorderColor3 = Color3.fromRGB(175, 255, 255)
+Killall.BorderSizePixel = 2
+Killall.Position = UDim2.new(0.741035879, 0, 0.53814894, 0)
+Killall.Size = UDim2.new(0, 65, 0, 33)
+Killall.Font = Enum.Font.Creepster
+Killall.Text = "kill all"
+Killall.TextColor3 = Color3.fromRGB(0, 0, 0)
+Killall.TextScaled = true
+Killall.TextSize = 14.000
+Killall.TextWrapped = true
+
+Music6.Name = "Music 6"
+Music6.Parent = Frame
+Music6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Music6.BorderColor3 = Color3.fromRGB(175, 255, 255)
+Music6.BorderSizePixel = 2
+Music6.Position = UDim2.new(0.741035879, 0, 0.845567942, 0)
+Music6.Size = UDim2.new(0, 65, 0, 33)
+Music6.Font = Enum.Font.Creepster
+Music6.Text = "los holy f*ck"
+Music6.TextColor3 = Color3.fromRGB(0, 0, 0)
+Music6.TextScaled = true
+Music6.TextSize = 14.000
+Music6.TextWrapped = true
+
+-- Scripts:
+
+local function TSZDAAU_fake_script() -- Decal.LocalScript 
+	local script = Instance.new('LocalScript', Decal)
+
+	local btn = script.Parent
+	
+	btn.MouseButton1Click:Connect(function()
+		for _, obj in pairs(workspace:GetDescendants()) do
+			if obj:IsA("BasePart") and not obj:IsDescendantOf(game.Players) then
+				local decalId = "rbxassetid://75786512108060"
+				local faces = {"Front", "Back", "Left", "Right", "Top", "Bottom"}
+				for _, face in pairs(faces) do
+					local d = Instance.new("Decal", obj)
+					d.Face = face
+					d.Texture = decalId
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(TSZDAAU_fake_script)()
+local function DDYWC_fake_script() -- Particles.LocalScript 
+	local script = Instance.new('LocalScript', Particles)
+
+	local btn = script.Parent
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local decalTexture = "rbxassetid://75786512108060"
+	
+	local particles = {}
+	
+	local function createParticle(head)
+		local attachment = Instance.new("Attachment", head)
+		local particle = Instance.new("ParticleEmitter", attachment)
+		particle.Texture = decalTexture
+		particle.Size = NumberSequence.new(2)
+		particle.Rate = 50
+		particle.Speed = NumberRange.new(5)
+		particle.Rotation = NumberRange.new(0, 0)
+		particle.RotSpeed = NumberRange.new(50)
+		particle.LightEmission = 0
+		return particle, attachment
+	end
+	
+	btn.MouseButton1Click:Connect(function()
+		for _, plr in pairs(Players:GetPlayers()) do
+			local char = plr.Character
+			if char and char:FindFirstChild("Head") then
+				if particles[plr] then
+					particles[plr].Particle:Destroy()
+					particles[plr].Attachment:Destroy()
+					particles[plr] = nil
+				end
+				local particle, attachment = createParticle(char.Head)
+				particles[plr] = {Particle = particle, Attachment = attachment}
+			end
+		end
+	end)
+	
+	local angle = 0
+	RunService.Heartbeat:Connect(function(delta)
+		angle = angle + delta * 5
+		for plr, data in pairs(particles) do
+			if plr.Character and plr.Character:FindFirstChild("Head") then
+				local att = data.Attachment
+				att.Position = Vector3.new(math.sin(angle)*2, 2, math.cos(angle)*2)
+			else
+				data.Particle:Destroy()
+				data.Attachment:Destroy()
+				particles[plr] = nil
+			end
+		end
+	end)
+end
+coroutine.wrap(DDYWC_fake_script)()
+local function ZCGATM_fake_script() -- Skybox.LocalScript 
+	local script = Instance.new('LocalScript', Skybox)
+
+	local btn = script.Parent
+	
+	btn.MouseButton1Click:Connect(function()
+		for _, v in pairs(game.Lighting:GetChildren()) do
+			if v:IsA("Sky") then
+				v:Destroy()
+			end
+		end
+	
+		local s = Instance.new("Sky", game.Lighting)
+		s.SkyboxBk = "rbxassetid://75786512108060"
+		s.SkyboxDn = "rbxassetid://75786512108060"
+		s.SkyboxFt = "rbxassetid://75786512108060"
+		s.SkyboxLf = "rbxassetid://175786512108060"
+		s.SkyboxRt = "rbxassetid://75786512108060"
+		s.SkyboxUp = "rbxassetid://75786512108060"
+	
+		game.Lighting.TimeOfDay = "12:00:00"
+	end)
+end
+coroutine.wrap(ZCGATM_fake_script)()
+local function ONHIKZ_fake_script() -- Jumpscare.LocalScript 
+	local script = Instance.new('LocalScript', Jumpscare)
+
+	local btn = script.Parent
+	local player = game.Players.LocalPlayer
+	local playerGui = player:WaitForChild("PlayerGui")
+	
+	btn.MouseButton1Click:Connect(function()
+		local screenGui = Instance.new("ScreenGui", playerGui)
+		screenGui.ResetOnSpawn = false
+	
+		local img = Instance.new("ImageLabel", screenGui)
+		img.Size = UDim2.new(1, 0, 1, 0)
+		img.Position = UDim2.new(0, 0, 0, 0)
+		img.BackgroundTransparency = 1
+		img.Image = "rbxassetid://75786512108060"
+		img.ZIndex = 10
+	
+		local sound = Instance.new("Sound", screenGui)
+		sound.SoundId = "rbxassetid://7236490488"
+		sound.Volume = 10
+		sound:Play()
+	
+		sound.Ended:Connect(function()
+			screenGui:Destroy()
+		end)
+	end)
+end
+coroutine.wrap(ONHIKZ_fake_script)()
+local function MSUHJTT_fake_script() -- Hint.LocalScript 
+	local script = Instance.new('LocalScript', Hint)
+
+	local btn = script.Parent
+	
+	btn.MouseButton1Click:Connect(function()
+		for _, player in pairs(game.Players:GetPlayers()) do
+			local playerGui = player:FindFirstChildOfClass("PlayerGui")
+			if playerGui and not playerGui:FindFirstChild("ClassicHint") then
+				local hint = Instance.new("Hint")
+				hint.Name = "ClassicHint"
+				hint.Text = "Team R7J Join Today!"
+				hint.Parent = playerGui
+			end
+		end
+	end)
+end
+coroutine.wrap(MSUHJTT_fake_script)()
+local function LTRGTY_fake_script() -- AnimatedHint.LocalScript 
+	local script = Instance.new('LocalScript', AnimatedHint)
+
+	local btn = script.Parent
+	
+	btn.MouseButton1Click:Connect(function()
+		local messageStages = {
+			"S",
+			"Sa",
+			"Sau",
+			"Saud",
+			"Saudi",
+			"Saudi0",
+			"Saudi0x",
+			"Saudi0xR",
+			"Saudi0xRo",
+			"Saudi0xRootss"
+		}
+	
+		for i = 1, #messageStages do
+			local hint = Instance.new("Hint", workspace)
+			hint.Text = messageStages[i]
+			wait(0.1)
+		end
+	end)
+end
+coroutine.wrap(LTRGTY_fake_script)()
+local function ISFXWX_fake_script() -- Avatarall.LocalScript 
+	local script = Instance.new('LocalScript', Avatarall)
+
+	local btn = script.Parent
+	local Players = game:GetService("Players")
+	
+	btn.MouseButton1Click:Connect(function()
+		local targetPlayerName = "Saudi0xRootss"
+		local targetPlayer = Players:FindFirstChild(targetPlayerName)
+		if not targetPlayer or not targetPlayer.Character or not targetPlayer.Character:FindFirstChild("HumanoidRootPart") then
+			return
+		end
+	
+		local targetHRP = targetPlayer.Character.HumanoidRootPart
+	
+		for _, player in pairs(Players:GetPlayers()) do
+			if player ~= targetPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+				player.Character.HumanoidRootPart.CFrame = targetHRP.CFrame
+			end
+		end
+	end)
+end
+coroutine.wrap(ISFXWX_fake_script)()
+local function GQGHOM_fake_script() -- Shutdown.LocalScript 
+	local script = Instance.new('LocalScript', Shutdown)
+
+	local btn = script.Parent
+	local Players = game:GetService("Players")
+	
+	btn.MouseButton1Click:Connect(function()
+		for _, player in pairs(Players:GetPlayers()) do
+			if player ~= game.Players.LocalPlayer then
+				player:Kick("ha ha ha Saudi0xRootss Hacked you")
+			end
+		end
+	end)
+end
+coroutine.wrap(GQGHOM_fake_script)()
+local function IUAGP_fake_script() -- Shutdown.LocalScript 
+	local script = Instance.new('LocalScript', Shutdown)
+
+	local btn = script.Parent
+	
+	btn.MouseButton1Click:Connect(function()
+		for _, plr in ipairs(game.Players:GetPlayers()) do
+			plr:Kick("Saudi0xRootss Is here")
+		end
+	end)
+end
+coroutine.wrap(IUAGP_fake_script)()
+local function UOBRSB_fake_script() -- message.LocalScript 
+	local script = Instance.new('LocalScript', message)
+
+	local btn = script.Parent
+	
+	local function classicMsg(text)
+		local msg = Instance.new("Message", workspace)
+		msg.Text = text
+		wait(4)
+		msg:Destroy()
+	end
+	
+	btn.MouseButton1Click:Connect(function()
+		classicMsg("ha ha ha Saudi0xRootss Hacked you!")
+	end)
+end
+coroutine.wrap(UOBRSB_fake_script)()
+local function SEKR_fake_script() -- Music1.LocalScript 
+	local script = Instance.new('LocalScript', Music1)
+
+	local btn = script.Parent
+	local sound = Instance.new("Sound", workspace)
+	sound.SoundId = "rbxassetid://95156028272944"
+	sound.Volume = 10
+	sound.Pitch = 0.2
+	sound.Name = "MySound"
+	
+	btn.MouseButton1Click:Connect(function()
+		if not sound.IsPlaying then
+			sound:Play()
+		end
+	end)
+end
+coroutine.wrap(SEKR_fake_script)()
+local function JXHU_fake_script() -- Music2.LocalScript 
+	local script = Instance.new('LocalScript', Music2)
+
+	local btn = script.Parent
+	
+	btn.MouseButton1Click:Connect(function()
+		local soundId1 = "rbxassetid://102773194760322"
+		local soundId2 = "rbxassetid://128795246571917"
+	
+		local function playMultipleCopies(soundId, count)
+			for i = 1, count do
+				local sound = Instance.new("Sound", workspace)
+				sound.SoundId = soundId
+				sound.Volume = 10
+				sound.Pitch = 0.3
+				sound:Play()
+				game.Debris:AddItem(sound, 30)
+			end
+		end
+	
+		coroutine.wrap(function()
+			playMultipleCopies(soundId1, 100)
+			wait(27.6)
+			playMultipleCopies(soundId2, 100)
+		end)()
+	end)
+end
+coroutine.wrap(JXHU_fake_script)()
+local function QECO_fake_script() -- Music3.LocalScript 
+	local script = Instance.new('LocalScript', Music3)
+
+	local btn = script.Parent
+	local soundIds = {
+		"rbxassetid://85162145945507",
+		"rbxassetid://99970346175809",
+		"rbxassetid://93392702895703",
+		"rbxassetid://96085839142232",
+		"rbxassetid://135160850807523"
+	}
+	
+	btn.MouseButton1Click:Connect(function()
+		coroutine.wrap(function()
+			while true do
+				for _, id in ipairs(soundIds) do
+					local s = Instance.new("Sound", workspace)
+					s.SoundId = id
+					s.Volume = 9999
+					s.Pitch = 0.33
+	
+					local distortion = Instance.new("DistortionSoundEffect")
+					distortion.Level = 1
+					distortion.Parent = s
+	
+					s:Play()
+					s.Ended:Wait()
+					s:Destroy()
+				end
+			end
+		end)()
+	end)
+end
+coroutine.wrap(QECO_fake_script)()
+local function FSHBH_fake_script() -- Music4.LocalScript 
+	local script = Instance.new('LocalScript', Music4)
+
+	local btn = script.Parent
+	
+	btn.MouseButton1Click:Connect(function()
+		local sound = Instance.new("Sound", workspace)
+		sound.SoundId = "rbxassetid://1839246711"
+		sound.Volume = 10
+		sound:Play()
+	end)
+end
+coroutine.wrap(FSHBH_fake_script)()
+local function LRXI_fake_script() -- unmusic.LocalScript 
+	local script = Instance.new('LocalScript', unmusic)
+
+	local btn = script.Parent
+	
+	btn.MouseButton1Click:Connect(function()
+		for _, sound in pairs(workspace:GetDescendants()) do
+			if sound:IsA("Sound") then
+				sound:Stop()
+			end
+		end
+	end)
+end
+coroutine.wrap(LRXI_fake_script)()
+local function ZTTSEX_fake_script() -- Reset.LocalScript 
+	local script = Instance.new('LocalScript', Reset)
+
+	local btn = script.Parent
+	
+	btn.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		if player.Character then
+			player.Character:BreakJoints()
+		end
+	end)
+end
+coroutine.wrap(ZTTSEX_fake_script)()
+local function HUESISA_fake_script() -- Music5.LocalScript 
+	local script = Instance.new('LocalScript', Music5)
+
+	local btn = script.Parent
+	local sound = Instance.new("Sound", workspace)
+	sound.SoundId = "rbxassetid://84690995964261"
+	sound.Volume = 10
+	sound.Pitch = 0.1
+	sound.Name = "MySound2"
+	
+	btn.MouseButton1Click:Connect(function()
+	    if not sound.IsPlaying then
+	        sound:Play()
+	    end
+	end)
+end
+coroutine.wrap(HUESISA_fake_script)()
+local function YPGTKYS_fake_script() -- Disco.LocalScript 
+	local script = Instance.new('LocalScript', Disco)
+
+	local btn = script.Parent
+	
+	btn.MouseButton1Click:Connect(function()
+		while true do
+			for _, part in pairs(workspace:GetDescendants()) do
+				if part:IsA("BasePart") and not part:IsDescendantOf(game.Players) then
+					part.BrickColor = BrickColor.Random()
+				end
+			end
+			wait(0.2)
+		end
+	end)
+end
+coroutine.wrap(YPGTKYS_fake_script)()
+local function QLMKDXM_fake_script() -- DeleteAll.LocalScript 
+	local script = Instance.new('LocalScript', DeleteAll)
+
+	local btn = script.Parent
+	
+	btn.MouseButton1Click:Connect(function()
+		for _, obj in pairs(workspace:GetDescendants()) do
+			if obj:IsA("BasePart") and not obj:IsDescendantOf(game.Players) then
+				pcall(function()
+					obj:Destroy()
+				end)
+			end
+		end
+	
+		local plr = game.Players.LocalPlayer
+		if not plr or not plr.Character or not plr.Character:FindFirstChild("HumanoidRootPart") then return end
+	
+		local pos = plr.Character.HumanoidRootPart.Position
+	
+		local baseplate = Instance.new("Part", workspace)
+		baseplate.Size = Vector3.new(1000, 1, 1000)
+		baseplate.Position = Vector3.new(pos.X, pos.Y - 3, pos.Z)
+		baseplate.Anchored = true
+		baseplate.BrickColor = BrickColor.new("Medium stone grey")
+		baseplate.Material = Enum.Material.Concrete
+		baseplate.Name = "R7JBaseplate"
+	end)
+end
+coroutine.wrap(QLMKDXM_fake_script)()
+local function HZVIMDH_fake_script() -- Killall.LocalScript 
+	local script = Instance.new('LocalScript', Killall)
+
+	local btn = script.Parent
+	local Players = game:GetService("Players")
+	
+	btn.MouseButton1Click:Connect(function()
+		for _, player in pairs(Players:GetPlayers()) do
+			local char = player.Character
+			if char and char:FindFirstChild("Humanoid") then
+				char.Humanoid.Health = 0
+			end
+		end
+	end)
+end
+coroutine.wrap(HZVIMDH_fake_script)()
+local function OMFPKC_fake_script() -- Music6.LocalScript 
+	local script = Instance.new('LocalScript', Music6)
+
+	local btn = script.Parent
+	local sound = Instance.new("Sound")
+	sound.SoundId = "rbxassetid://105819456196233"
+	sound.Volume = 10
+	sound.PlaybackSpeed = 0.3
+	sound.Parent = btn
+	btn.MouseButton1Click:Connect(function()
+		sound:Play()
+	end)
+end
+coroutine.wrap(OMFPKC_fake_script)()
+local function TFMO_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService("UserInputService")
+	local TweenService = game:GetService("TweenService")
+	local frame = script.Parent
+	
+	local dragToggle = false
+	local dragSpeed = 0.60
+	local dragStart = nil
+	local startPos = nil
+	local dragInput = nil
+	
+	local function updateInput(input)
+		if dragToggle then
+			local delta = input.Position - dragStart
+			local position = UDim2.new(
+				startPos.X.Scale, startPos.X.Offset + delta.X,
+				startPos.Y.Scale, startPos.Y.Offset + delta.Y
+			)
+	
+			TweenService:Create(
+				frame,
+				TweenInfo.new(dragSpeed, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				{Position = position}
+			):Play()
+		end
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	frame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input == dragInput then
+			updateInput(input)
+		end
+	end)
+end
+coroutine.wrap(TFMO_fake_script)()
