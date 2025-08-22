@@ -1,0 +1,124 @@
+-- Roblox GUI Hub by SHG_SHALEEHM7MD
+local mainColor = Color3.fromRGB(0,0,0)
+local strokeColor = Color3.fromRGB(139,0,0)
+local buttonColor = Color3.fromRGB(255,255,255)
+
+local scripts = {
+    {name="Saudi0xRootss", url="https://raw.githubusercontent.com/5waf/Saudi0xRootss-Script/refs/heads/main/Saudi0xRootss", maps="Universal"},
+    {name="VR7-ON-TOP", url="https://raw.githubusercontent.com/VR7ss/OMK/refs/heads/main/VR7-ON-TOP", maps="Universal"},
+    {name="99 Nights in the Forest", url="https://raw.githubusercontent.com/Kenniel123/99-Nights-in-the-Forest/refs/heads/main/99%20Nights%20in%20the%20Forest", maps="Map specific"},
+    {name="TiemBomb.V1", url="https://raw.githubusercontent.com/Front-Evill/Script-Hub/refs/heads/main/TiemBomb.V1.lua", maps="Map specific"},
+    {name="BeeconHub", url="https://raw.githubusercontent.com/BaconBossScript/BeeconHub/main/BeeconHub", maps="MM2"},
+    {name="Project-9393", url="https://raw.githubusercontent.com/motonik-heldoaxxyy/Project-9393-_-2-8-_-93-_04-2-9-38-8_-8-/refs/heads/main/Protected_9674419360057427.lua.txt", maps="Steal a Brainrot"},
+    {name="Pastebin Script", url="https://pastebin.com/raw/VSfpiSDc", maps="Universal"},
+    {name="Brookhaven", url="https://raw.githubusercontent.com/as6cd0/SP_Hub/refs/heads/main/Brookhaven", maps="Brookhaven"},
+    {name="Emote Pack Fixed", url="https://gist.githubusercontent.com/Defy-cloud/5d2cfe62425462b8b47b2e2b71a56ae7/raw/c542c7d397f20cd0ab755240443c7f2d54696d44/Emote%2520Pack%2520Fixed.lua", maps="Universal"}
+}
+
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "SHG_Hub"
+screenGui.Parent = game:GetService("CoreGui")
+
+local mainFrame = Instance.new("Frame")
+mainFrame.Size = UDim2.new(0,400,0,600)
+mainFrame.Position = UDim2.new(0.5,-200,0.5,-300)
+mainFrame.BackgroundColor3 = mainColor
+mainFrame.BorderColor3 = strokeColor
+mainFrame.BorderSizePixel = 3
+mainFrame.Parent = screenGui
+mainFrame.Active = true
+mainFrame.Draggable = true
+
+local mainButton = Instance.new("TextButton")
+mainButton.Size = UDim2.new(0,120,0,40)
+mainButton.Position = UDim2.new(0,10,0,10)
+mainButton.Text = "MAIN"
+mainButton.BackgroundColor3 = buttonColor
+mainButton.BorderColor3 = strokeColor
+mainButton.BorderSizePixel = 3
+mainButton.Parent = mainFrame
+
+local scriptsFrame = Instance.new("Frame")
+scriptsFrame.Size = UDim2.new(0,380,0,480)
+scriptsFrame.Position = UDim2.new(0,10,0,60)
+scriptsFrame.BackgroundColor3 = Color3.fromRGB(30,30,30)
+scriptsFrame.BorderColor3 = strokeColor
+scriptsFrame.BorderSizePixel = 3
+scriptsFrame.Visible = false
+scriptsFrame.Parent = mainFrame
+
+local searchBox = Instance.new("TextBox")
+searchBox.Size = UDim2.new(0,360,0,30)
+searchBox.Position = UDim2.new(0,10,0,10)
+searchBox.PlaceholderText = "Search scripts..."
+searchBox.BackgroundColor3 = Color3.fromRGB(50,50,50)
+searchBox.BorderColor3 = strokeColor
+searchBox.BorderSizePixel = 3
+searchBox.TextColor3 = Color3.fromRGB(255,255,255)
+searchBox.Parent = scriptsFrame
+
+mainButton.MouseButton1Click:Connect(function()
+    scriptsFrame.Visible = not scriptsFrame.Visible
+end)
+
+local yPos = 50
+local scriptButtons = {}
+for i, scriptInfo in ipairs(scripts) do
+    local btn = Instance.new("TextButton")
+    btn.Size = UDim2.new(0,360,0,30)
+    btn.Position = UDim2.new(0,10,0,yPos)
+    btn.Text = scriptInfo.name.." | "..scriptInfo.maps
+    btn.BackgroundColor3 = buttonColor
+    btn.BorderColor3 = strokeColor
+    btn.BorderSizePixel = 3
+    btn.TextColor3 = Color3.fromRGB(0,0,0)
+    btn.Parent = scriptsFrame
+
+    btn.MouseButton1Click:Connect(function()
+        loadstring(game:HttpGet(scriptInfo.url))()
+        screenGui:Destroy()
+    end)
+    table.insert(scriptButtons, btn)
+    yPos = yPos + 40
+end
+
+searchBox:GetPropertyChangedSignal("Text"):Connect(function()
+    local text = searchBox.Text:lower()
+    for i, btn in ipairs(scriptButtons) do
+        btn.Visible = btn.Text:lower():find(text) and true or false
+    end
+end)
+
+-- Frame للعرض أسفل السكربتات
+local devFrame = Instance.new("Frame")
+devFrame.Size = UDim2.new(0,380,0,100)
+devFrame.Position = UDim2.new(0,10,0,490) -- أسفل السكربتات
+devFrame.BackgroundColor3 = mainColor
+devFrame.BorderColor3 = strokeColor
+devFrame.BorderSizePixel = 3
+devFrame.Parent = mainFrame
+
+local devImage = Instance.new("ImageLabel")
+devImage.Size = UDim2.new(0,60,0,60)
+devImage.Position = UDim2.new(0,10,0,20)
+devImage.Image = "https://www.roblox.com/headshot-thumbnail/image?userId=8309459853&width=420&height=420&format=png"
+devImage.BackgroundTransparency = 1
+devImage.Parent = devFrame
+
+local devName = Instance.new("TextLabel")
+devName.Size = UDim2.new(0,200,0,25)
+devName.Position = UDim2.new(0,80,0,20)
+devName.Text = "SHG_SHALEEHM7MD"
+devName.TextColor3 = Color3.fromRGB(255,255,255)
+devName.BackgroundTransparency = 1
+devName.TextScaled = true
+devName.Parent = devFrame
+
+local devTop = Instance.new("TextLabel")
+devTop.Size = UDim2.new(0,200,0,25)
+devTop.Position = UDim2.new(0,80,0,50)
+devTop.Text = "The Top"
+devTop.TextColor3 = Color3.fromRGB(255,215,0)
+devTop.BackgroundTransparency = 1
+devTop.TextScaled = true
+devTop.Parent = devFrame
